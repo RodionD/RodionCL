@@ -71,4 +71,5 @@ x11-misc/ktsuss
 sys-apps/pmount
 sys-fs/jmtpfs
 media-gfx/gphotofs 
+sys-fs/fuse-exfat
 #in#
