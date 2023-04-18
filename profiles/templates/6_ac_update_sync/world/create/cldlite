@@ -69,5 +69,6 @@
 !!kde-apps/baloo-widgets
 !!sys-apps/keyexec
 !!media-gfx/gimp
+!!net-print/gutenprint
 media-gfx/krita
 #in#
