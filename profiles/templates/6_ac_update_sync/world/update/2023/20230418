@@ -5,3 +5,6 @@
 #?in(os_linux_pkglist, CLDLite)!=#
 net-irc/hexchat
 #in#
+#?in(os_linux_pkglist, CLDO)!=#
+sys-fs/fuse-exfat
+#in#
