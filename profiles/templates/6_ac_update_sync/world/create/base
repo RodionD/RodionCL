@@ -4,6 +4,10 @@
 
 app-misc/mc
 app-emulation/virtualbox-guest-additions
+!!net-wireless/rtl8821cu
+!!net-wireless/rtl8814au
+!!net-wireless/broadcom-sta
+!!net-wireless/rtl8821ce
 
 #?in(os_linux_pkglist, CLDO)!=#
 app-office/libreoffice-bin

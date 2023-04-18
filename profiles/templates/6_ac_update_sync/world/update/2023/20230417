@@ -1,0 +1,10 @@
+# Calculate format=world name=world ini(overlay-RodionCL.world)<#-cut()-#
+
+#-ini(overlay-RodionCL.world,#-cut()-#)-#
+
+!!app-office/libreoffice
+app-office/libreoffice-bin
+
+#?in(os_linux_pkglist, CLDLite)!=#
+media-gfx/krita
+#in#
