@@ -1,0 +1,8 @@
+# Calculate
+
+[Notification]
+show_notification=true
+notification_type=1
+
+[StatusIcon]
+onclick=pavucontrol

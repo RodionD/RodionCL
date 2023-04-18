@@ -1,0 +1,5 @@
+sys-apps/calculate-utils client qt5
+x11-misc/obdevicemenu notifications
+x11-misc/ktsuss sudo
+media-gfx/flameshot -wayland
+app-office/libreoffice-bin java

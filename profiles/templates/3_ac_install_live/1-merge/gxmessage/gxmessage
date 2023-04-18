@@ -1,0 +1,5 @@
+#Calculate chmod=0440 path=/etc/sudoers.d/
+
+%users ALL=(ALL) NOPASSWD: /sbin/shutdown
+%users ALL=(ALL) NOPASSWD: /sbin/reboot
+%users ALL=(ALL) NOPASSWD: /sbin/halt
