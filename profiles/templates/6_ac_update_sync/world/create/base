@@ -1,8 +1,10 @@
 # Calculate name=world format=world
 
+#?in(os_linux_pkglist, calculate)!=#
 app-misc/mc
 app-emulation/virtualbox-guest-additions
 !!net-wireless/rtl8821cu
 !!net-wireless/rtl8814au
 !!net-wireless/broadcom-sta
 !!net-wireless/rtl8821ce
+#in#
