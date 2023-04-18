@@ -4,5 +4,4 @@
 
 #?in(os_linux_pkglist, CLDLite)!=#
 net-irc/hexchat
-sys-fs/fuse-exfat
 #in#
