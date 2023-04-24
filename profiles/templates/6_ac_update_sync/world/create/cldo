@@ -72,4 +72,6 @@ sys-apps/pmount
 sys-fs/jmtpfs
 media-gfx/gphotofs 
 sys-fs/fuse-exfat
+media-gfx/shotwell
+sys-fs/exfatprogs
 #in#
