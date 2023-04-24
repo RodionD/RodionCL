@@ -5,4 +5,5 @@
 #?in(os_linux_pkglist, CLDO)!=#
 media-gfx/shotwell
 sys-fs/exfatprogs
+!!media-gfx/nomacs
 #in#

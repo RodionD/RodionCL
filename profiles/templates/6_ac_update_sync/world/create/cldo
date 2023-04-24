@@ -24,8 +24,6 @@ media-gfx/splash-themes-calculate
 x11-themes/calculate-icon-theme
 x11-themes/adwaita-qt
 x11-misc/qt5ct
-media-gfx/imagemagick
-media-gfx/nomacs
 media-sound/strawberry
 media-video/smplayer
 media-sound/qastools
