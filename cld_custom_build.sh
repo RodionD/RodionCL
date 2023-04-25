@@ -50,8 +50,8 @@ menu(){
 	case $a in
 	    1) set_cldo ;;
 	    2) set_cldlite ;;
-		0) exit 0 ;;
-		*) echo -e $red"Wrong option."$clear ; menu ;;
+	    0) exit 0 ;;
+	    *) echo -e $red"Wrong option."$clear ; menu ;;
 	esac
 }
 
