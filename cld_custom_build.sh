@@ -67,7 +67,7 @@ CALC_URL=https://mirror.yandex.ru/calculate/nightly/
 GIT_URL='https://github.com/RodionD/RodionCL'
 
 ## Find last available nightly data
-LAST_DATE=$(w3m -dump $CALC_URL | grep -v "Index" | grep "/" | tail -1 | head -c8)
+LAST_DATE=$(w3m -dump $CALC_URL | grep -v "Index" | grep "/" | tail -1 | cut -d " " -f 1)
 echo $(ColorGreen "LAST DATE: ${LAST_DATE}")
 
 ## Last nigtly URL
