@@ -34,7 +34,7 @@ set_cldlite() {
 	BUILD_ID="cldlite"
 	PROFILE_NAME="CLDLite"
 }
-echo $(ColorGreen '
+
 ##
 # Show menu
 ##
