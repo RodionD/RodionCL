@@ -67,7 +67,7 @@ CALC_URL=https://mirror.yandex.ru/calculate/nightly/
 GIT_URL='https://github.com/RodionD/RodionCL'
 
 ## Find last available nightly data
-LAST_DATE=$(curl $CALC_URL | grep -o '<a .*href=.*>' | sed -e 's/<a /\n<a /g' | sed -e 's/<a .*href=['"'"'"]//' -e 's/["'"'"'].*$//' -e '/^$/ d' | tail -1)
+LAST_DATE=$(w3m -dump -T 'text/html' $CALC_URL | grep -v "Index" | grep "/" | tail -1 | head -c8)
 echo $(ColorGreen "LAST DATE: ${LAST_DATE}")
 
 ## Last nigtly URL
@@ -75,7 +75,7 @@ LAST_NIGHTLY=$CALC_URL$LAST_DATE
 echo $(ColorGreen "LAST NIGHTLY: ${LAST_NIGHTLY}")
 
 ## Last nightly ISO URL
-ISO_NAME=$(curl $LAST_NIGHTLY | grep -o '<a .*href=.*>' | sed -e 's/<a /\n<a /g' | sed -e 's/<a .*href=['"'"'"]//' -e 's/["'"'"'].*$//' -e '/^$/ d' | grep "${CALC_DIST}-" | grep .iso)
+ISO_NAME=$(w3m -dump $LAST_NIGHTLY | grep $CALC_DIST*.iso | cut -d " " -f 1)
 echo $(ColorGreen "ISO NAME: ${ISO_NAME}")
 
 ## Download last nightly ISO if not exist
