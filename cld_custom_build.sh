@@ -20,6 +20,9 @@ ColorRed(){
 	echo -ne $red$1$clear
 }
 
+##
+# Set variables
+##
 set_cldo() {
 	CALC_DIST="cls"
 	BUILD_ID="cldo"
@@ -31,7 +34,10 @@ set_cldlite() {
 	BUILD_ID="cldlite"
 	PROFILE_NAME="CLDLite"
 }
-
+echo $(ColorGreen '
+##
+# Show menu
+##
 menu(){
 	echo -ne "
 	Select distribution
@@ -49,44 +55,66 @@ menu(){
 	esac
 }
 
+##
+# Call menu
+##
 menu 
 
+##
+# Set variables
+##
 CALC_URL=https://mirror.yandex.ru/calculate/nightly/
 GIT_URL='https://github.com/RodionD/RodionCL'
 
+## Find last available nightly data
 LAST_DATE=$(curl $CALC_URL | grep -o '<a .*href=.*>' | sed -e 's/<a /\n<a /g' | sed -e 's/<a .*href=['"'"'"]//' -e 's/["'"'"'].*$//' -e '/^$/ d' | tail -1)
-echo "LAST DATE: ${LAST_DATE}"
-LAST_NIGHTLY=$CALC_URL$LAST_DATE
-echo "LAST NIGHTLY: ${LAST_NIGHTLY}"
-ISO_NAME=$(curl $LAST_NIGHTLY | grep -o '<a .*href=.*>' | sed -e 's/<a /\n<a /g' | sed -e 's/<a .*href=['"'"'"]//' -e 's/["'"'"'].*$//' -e '/^$/ d' | grep "${CALC_DIST}-" | grep .iso)
-echo "ISO NAME: ${ISO_NAME}"
+echo $(ColorGreen "LAST DATE: ${LAST_DATE}")
 
+## Last nigtly URL
+LAST_NIGHTLY=$CALC_URL$LAST_DATE
+echo $(ColorGreen "LAST NIGHTLY: ${LAST_NIGHTLY}")
+
+## Last nightly ISO URL
+ISO_NAME=$(curl $LAST_NIGHTLY | grep -o '<a .*href=.*>' | sed -e 's/<a /\n<a /g' | sed -e 's/<a .*href=['"'"'"]//' -e 's/["'"'"'].*$//' -e '/^$/ d' | grep "${CALC_DIST}-" | grep .iso)
+echo $(ColorGreen "ISO NAME: ${ISO_NAME}")
+
+## Download last nightly ISO if not exist
 if [[ ! -f ./$ISO_NAME ]];
 then
   curl ${LAST_NIGHTLY}${ISO_NAME} -o ${ISO_NAME}
 fi
 
+## Read active cl build id
 read -a strarr <<< $(sudo cl-builder-update --id list | grep "*")
 echo $strarr[2]
 
+
+## If active build is exist
 if [[ ! "${strarr[2]}" == "*${BUILD_ID}*" ]]; then
-	echo "break"
+
+	## Break current build
+	echo $(ColorGreen 'Break current build')
 	sudo cl-builder-break --id "${BUILD_ID}" --clear ON --clear-pkg ON -f || true
 
-	echo "prepare"
+	## Prepare new build
+	echo $(ColorGreen 'Prepare new build')
 	sudo cl-builder-prepare  --id "${BUILD_ID}" --iso "${ISO_NAME}" -f
 
-	echo "update 1"
+	## First build update without update package, only portage tree and overlays
+	echo $(ColorGreen 'First build update without update package, only portage tree and overlays')
 	sudo cl-builder-update --id "${BUILD_ID}" --scan ON -s -e -f
 
-	echo "profile"
+	## Change profile to nessesary
+	echo $(ColorGreen 'Change profile to nessesary')
 	sudo cl-builder-profile --id "${BUILD_ID}" -f --url "${GIT_URL}" "${PROFILE_NAME}"
 fi
 
-echo "update 2"
+## Second build update with new profile
+echo $(ColorGreen 'Second build update with new profile')
 sudo cl-builder-update --id "${BUILD_ID}" --scan ON -e -f
 
-echo "image"
+## Build image
+echo $(ColorGreen 'Build image')
 sudo cl-builder-image --id "${BUILD_ID}" -f -V OFF --keep-tree OFF -c zstd --image "/var/calculate/linux/${BUILD_ID}-${LAST_DATE:: -1}-x86_64.iso"
 
 exit 0
