@@ -1,0 +1,14 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDLABWC)!=#
+!!app-misc/xorg-meta
+gui-wm/labwc
+gui-apps/waybar
+gui-apps/wofi
+gui-apps/grim
+gui-apps/swaybg
+gui-apps/mako
+gui-apps/swaylock
+x11-terms/rxvt-unicode
+app-office/libreoffice-bin
+#in#

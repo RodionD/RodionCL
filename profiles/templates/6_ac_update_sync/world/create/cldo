@@ -7,7 +7,6 @@ app-text/evince
 sci-calculators/galculator
 app-editors/leafpad
 media-gfx/feh
-x11-wm/openbox
 x11-misc/obmenu-generator
 x11-misc/obconf
 x11-misc/tint2
@@ -35,15 +34,12 @@ net-analyzer/nmap
 net-analyzer/traceroute
 www-client/firefox
 net-misc/remmina
-net-dns/bind-tools
 net-firewall/shorewall
 net-misc/ntp
 net-misc/vconfig
 net-vpn/networkmanager-openvpn
 net-vpn/networkmanager-pptp
 net-vpn/networkmanager-vpnc
-virtual/cron
-virtual/logger
 sys-apps/mlocate
 sys-block/gparted
 x11-misc/wmctrl
@@ -51,8 +47,6 @@ x11-misc/parcellite
 net-wireless/blueman
 gnome-extra/nm-applet
 app-eselect/eselect-notify-send
-app-eselect/eselect-mpg123
-app-admin/sudo
 net-irc/hexchat
 x11-misc/xscreensaver
 x11-misc/arandr
