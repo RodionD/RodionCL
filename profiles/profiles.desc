@@ -8,7 +8,7 @@
 
 
 # AMD64 Profiles
-amd64		CLDO/amd64/20					stable
+amd64		CLDO/amd64/20						stable
 amd64		CLDLite/amd64/20					stable
 amd64		CLDLabWC/amd64/20					stable
 
