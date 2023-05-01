@@ -1,2 +1,3 @@
 x11-misc/ktsuss sudo
 app-office/libreoffice-bin java
+x11-libs/gtk+ -xinerama
