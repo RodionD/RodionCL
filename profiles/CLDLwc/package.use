@@ -1,5 +1,5 @@
-x11-misc/ktsuss sudo
 app-office/libreoffice-bin java
-x11-libs/gtk+ -xinerama
 media-libs/mesa -xa
 media-libs/libva -opengl
+dev-qt/qtgui -accessibility eglfs
+app-i18n/uim -gtk -gtk2
