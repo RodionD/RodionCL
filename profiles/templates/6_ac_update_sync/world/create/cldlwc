@@ -2,6 +2,7 @@
 
 #?in(os_linux_pkglist, CLDLwc)!=#
 !!app-misc/xorg-meta
+!!app-i18n/uim
 gui-wm/labwc
 gui-apps/waybar
 gui-apps/wofi
