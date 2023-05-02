@@ -8,5 +8,5 @@ gui-apps/grim
 gui-apps/swaybg
 gui-apps/mako
 gui-apps/swaylock
-x11-misc/sddm
+gnome-base/gdm
 #in#
