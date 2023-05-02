@@ -5,4 +5,4 @@ media-libs/libva -opengl
 media-libs/libcanberra alsa
 app-crypt/gcr introspection
 dev-libs/gjs cairo
-x11-libs/gtk+ -introspection
+x11-libs/gtk+ introspection
