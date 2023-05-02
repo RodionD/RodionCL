@@ -2,4 +2,4 @@ media-libs/mesa -xa
 x11-libs/gtk+ -xinerama
 gnome-base/librsvg -vala
 media-libs/libva -opengl
-dev-qt/qtgui eglfs
+dev-qt/qtgui eglfs -accessibility
