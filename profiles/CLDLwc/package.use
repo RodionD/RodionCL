@@ -1,6 +1,3 @@
-app-office/libreoffice-bin java
 media-libs/mesa -xa
-media-libs/libva -opengl
-dev-qt/qtgui -accessibility eglfs
-app-i18n/uim -gtk -gtk2
 x11-libs/gtk+ -xinerama
+gnome-base/librsvg -vala
