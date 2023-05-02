@@ -1,2 +1,2 @@
-USE="wayland elogind -X -systemd -gtk2 -gtk"
+USE="wayland elogind -X -xorg -systemd -gtk2 -gtk"
 THEMES="CLS"
