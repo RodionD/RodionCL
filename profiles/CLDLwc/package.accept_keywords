@@ -2,3 +2,4 @@ gui-wm/labwc ~amd64
 gui-apps/waybar ~amd64
 gui-apps/wofi ~amd64
 dev-libs/date ~amd64
+gui-apps/gtkgreet-0.7 ~amd64
