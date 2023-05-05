@@ -6,6 +6,8 @@ dev-libs/gjs cairo
 media-libs/freetype -harfbuzz
 sys-auth/elogind policykit
 
+sys-auth/polkit introspection
+
 virtual/jpeg-100 abi_x86-32
 dev-libs/wayland abi_x86-32
 media-libs/libglvnd abi_x86-32
@@ -23,3 +25,5 @@ sys-libs/compiler-rt-sanitizers
 sys-devel/clang-runtime
 dev-libs/libgudev introspection
 x11-libs/gdk-pixbuf
+gnome-base/librsvg introspection vala
+sys-apps/dbus
