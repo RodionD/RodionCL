@@ -7,6 +7,7 @@ media-libs/freetype -harfbuzz
 sys-auth/elogind policykit
 
 sys-auth/polkit introspection
+app-text/dvipng -truetype
 
 virtual/jpeg abi_x86_32
 dev-libs/wayland abi_x86_32
