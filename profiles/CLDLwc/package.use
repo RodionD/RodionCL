@@ -6,5 +6,5 @@ media-libs/libcanberra alsa
 app-crypt/gcr introspection
 dev-libs/gjs cairo
 x11-libs/gtk+ -introspection
-dev-qt/qtgui eglfs accessibility
+dev-qt/qtgui eglfs egl accessibility
 dev-qt/qtbase eglfs
