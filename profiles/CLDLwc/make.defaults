@@ -1,2 +1,3 @@
 USE="wayland elogind -X -xorg -systemd"
+ABI_X86="64 32"
 THEMES="CLS"
