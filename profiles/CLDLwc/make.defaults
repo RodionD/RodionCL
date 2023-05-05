@@ -1,2 +1,0 @@
-USE="wayland elogind -X -xorg -systemd introspection"
-THEMES="CLS"

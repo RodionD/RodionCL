@@ -10,5 +10,4 @@
 # AMD64 Profiles
 amd64		CLDO/amd64/20					stable
 amd64		CLDLite/amd64/20				stable
-amd64		CLDLwc/amd64/20					stable
 # vim: set ts=8
