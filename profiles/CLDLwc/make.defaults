@@ -1,2 +1,2 @@
-USE="wayland elogind -X -xorg -systemd introspection"
+USE="wayland elogind -X -xorg -systemd introspection -truetype"
 THEMES="CLS"
