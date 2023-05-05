@@ -6,3 +6,12 @@ media-libs/libcanberra alsa
 dev-libs/gjs cairo
 media-libs/freetype -harfbuzz
 sys-auth/elogind policykit
+
+virtual/jpeg-100 abi_x86-32
+dev-libs/wayland abi_x86-32
+media-libs/libglvnd abi_x86-32
+sys-libs/libomp abi_x86-32
+media-libs/alsa-lib
+media-libs/libv4l
+media-sound/mpg123 alsa pulseaudio sdl
+media-libs/libsndfile
