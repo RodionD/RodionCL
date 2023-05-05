@@ -3,7 +3,7 @@
 ##
 # Set variables
 ##
-CALC_URL=https://mirror.yandex.ru/calculate/nightly/
+CALC_URL='https://mirror.yandex.ru/calculate/nightly/'
 GIT_URL='https://github.com/RodionD/RodionCL'
 IF_BREAK=0
 
@@ -57,6 +57,7 @@ main_menu(){
 	case $a in
 	    1) set_cldo ;;
 	    2) set_cldlite ;;
+	    3) set_cldlwc ;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear ; main_menu ;;
 	esac
@@ -102,7 +103,7 @@ echo $(ColorGreen "ISO NAME: ${ISO_NAME}")
 ## Download last nightly ISO if not exist
 download_iso() {
 	if [[ ! -f ./$ISO_NAME ]];
-	then
+	then           -
 		echo $(ColorGreen 'Download fresh ISO')
 		echo "curl ${LAST_NIGHTLY}${ISO_NAME} -o ${ISO_NAME}"
 		curl ${LAST_NIGHTLY}${ISO_NAME} -o $ISO_NAME
@@ -126,21 +127,21 @@ prepare_steps() {
 
 	## Change profile to nessesary
 	echo $(ColorGreen 'Change profile to nessesary')
-	echo "cl-builder-profile --id ${BUILD_ID} -f --url ${GIT_URL} ${PROFILE_NAME}"
-	sudo cl-builder-profile --id "${BUILD_ID}" -f --url "${GIT_URL}" "${PROFILE_NAME}"
+	echo "cl-builder-profile --id ${BUILD_ID} -u -f --url ${GIT_URL} ${PROFILE_NAME}"
+	sudo cl-builder-profile --id "${BUILD_ID}" -u -f --url "${GIT_URL}" "${PROFILE_NAME}"
 }
 
 ## Update current build and build iso steps
 update_steps() {
 	## Second build update with new profile
 	echo $(ColorGreen 'Second build update with new profile')
-	echo "cl-builder-update --id ${BUILD_ID} --scan ON -e -f"
+	echo "cl-builder-update --id ${BUILD_ID} --scan ON --check-repos ON --force-egencache -e -f"
 	sudo cl-builder-update --id "${BUILD_ID}" --scan ON -e -f
 
 	## Build image
 	echo $(ColorGreen 'Build image')
 	echo "cl-builder-image --id ${BUILD_ID} -f -V OFF --keep-tree OFF -c zstd --image /var/calculate/linux/${BUILD_ID}-${LAST_DATE:: -1}-x86_64.iso"
-	sudo cl-builder-image --id "${BUILD_ID}" -f -V OFF --keep-tree OFF -c zstd --image "/var/calculate/linux/${BUILD_ID}-${LAST_DATE:: -1}-x86_64.iso"
+	##sudo cl-builder-image --id "${BUILD_ID}" -f -V OFF --keep-tree OFF -c zstd --image "/var/calculate/linux/${BUILD_ID}-${LAST_DATE:: -1}-x86_64.iso"
 }
 
 break_step() {
