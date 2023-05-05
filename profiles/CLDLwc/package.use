@@ -5,3 +5,4 @@ media-libs/libva -opengl
 media-libs/libcanberra alsa
 dev-libs/gjs cairo
 media-libs/freetype -harfbuzz
+sys-auth/elogind policykit
