@@ -28,3 +28,5 @@ x11-libs/gdk-pixbuf abi_x86-32
 gnome-base/librsvg vala abi_x86-32
 sys-apps/dbus abi_x86-32
 dev-libs/atk abi_x86-32
+media-video/pipewire bluetooth dbus
+media-libs/libsdl2 alsa dbus opengl pulseaudio vulkan
