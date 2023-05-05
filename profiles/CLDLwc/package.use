@@ -3,6 +3,4 @@ x11-libs/gtk+ -xinerama
 gnome-base/librsvg -vala
 media-libs/libva -opengl
 media-libs/libcanberra alsa
-app-crypt/gcr introspection
 dev-libs/gjs cairo
-x11-libs/gtk+ -introspection
