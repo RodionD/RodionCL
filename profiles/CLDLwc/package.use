@@ -15,7 +15,7 @@ sys-libs/libomp abi_x86-32
 media-libs/alsa-lib abi_x86-32
 media-libs/libv4l abi_x86-32
 media-sound/mpg123 alsa pulseaudio sdl abi_x86-32
-media-libs/libsndfile abi_x86-32
+media-libs/libsndfile minimal abi_x86-32
 dev-libs/opencl-icd-loader abi_x86-32
 virtual/opencl abi_x86-32
 sys-devel/llvm abi_x86-32
