@@ -123,7 +123,7 @@ our $SCHEMA = [
     {item => ['firefox', 'Web браузер',       'web-browser']},
     {item => ['rofi -show',             'Выполнить комманду',       'system-run']},
 
-    {sep => 'Categories'},
+    {sep => 'Категории'},
 
     #          NAME            LABEL                ICON
     {cat => ['utility',     'Служебные', 'applications-utilities']},
