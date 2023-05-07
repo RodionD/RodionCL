@@ -4,3 +4,4 @@ x11-misc/ktsuss sudo
 media-gfx/flameshot -wayland
 app-office/libreoffice-bin java
 dev-libs/libgdata -gnome-online-accounts
+x11-misc/tint2 battery startup-notification tint2conf
