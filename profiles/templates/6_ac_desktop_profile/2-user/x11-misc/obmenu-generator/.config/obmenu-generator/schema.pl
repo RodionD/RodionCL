@@ -34,7 +34,7 @@ our $SCHEMA = [
     {item => ['spacefm',        'File Manager',      'file-manager']},
     {item => [$CONFIG->{terminal},             'Terminal',          'terminal']},
     {item => ['firefox', 'Web Browser',       'web-browser']},
-    {item => ['gmrun',             'Run command',       'system-run']},
+    {item => ['rofi',             'Run command',       'system-run']},
 
     {sep => 'Categories'},
 
@@ -121,7 +121,7 @@ our $SCHEMA = [
     {item => ['spacefm',        'Файловый менеджер',      'file-manager']},
     {item => [$CONFIG->{terminal},             'Терминал',          'terminal']},
     {item => ['firefox', 'Web браузер',       'web-browser']},
-    {item => ['gmrun',             'Выполнить комманду',       'system-run']},
+    {item => ['rofi',             'Выполнить комманду',       'system-run']},
 
     {sep => 'Categories'},
 

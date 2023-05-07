@@ -281,9 +281,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>gmrun</name>
+          <name>rofi</name>
         </startupnotify>
-        <command>gmrun</command>
+        <command>rofi</command>
       </action>
     </keybind>
     <keybind key="0x7A">
