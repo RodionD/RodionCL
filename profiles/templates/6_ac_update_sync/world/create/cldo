@@ -10,7 +10,6 @@ media-gfx/feh
 x11-misc/obmenu-generator
 x11-misc/obconf
 x11-misc/tint2
-x11-misc/rofi
 x11-misc/spacefm
 x11-misc/xxkb
 x11-terms/rxvt-unicode
@@ -68,4 +67,5 @@ media-gfx/shotwell
 sys-fs/exfatprogs
 net-irc/hexchat
 sys-fs/udiskie
+x11-misc/gmrun
 #in#
