@@ -13,3 +13,4 @@ color_sel_fg        = #3b4252 100
 color_sel_border    = #ffffff 100
 csv_name_format     = %n\n<span size="x-small">%g</span>
 csv_no_dirs         = 0
+menu_padding_top	= 30
