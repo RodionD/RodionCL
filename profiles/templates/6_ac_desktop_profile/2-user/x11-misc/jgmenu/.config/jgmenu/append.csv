@@ -1,14 +1,20 @@
 # Calculate append=skip
 ^sep()
 #?os_locale_language==ru#
-Сон,			dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.Suspend boolean:false,  system-log-out
-Перезагрузка,	dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.Reboot boolean:false,   system-reboot
-Выключение,		dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.PowerOff boolean:false, system-shutdown
+Выключение,		gxshutdown, system-shutdown
+^sep()
+^tag(openbox)
+Перезагрузка конфигурации,	'openbox --reconfigure',				openbox
+Редактирование автостарта,	'$EDITOR ~/.config/openbox/autostart',	shellscript
+Редактирование rc.xml,		'$EDITOR ~/.config/openbox/rc.xml',		text-xml
 ^sep()
 #os_locale_language#
 #?os_locale_language!=ru#
-Suspend,      dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.Suspend boolean:false,  system-log-out
-Reboot,       dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.Reboot boolean:false,   system-reboot
-Poweroff,     dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager.PowerOff boolean:false, system-shutdown
+PowerOff,		gxshutdown, system-shutdown
+^sep()
+^tag(openbox)
+Reload configuration,	'openbox --reconfigure',				openbox
+Edit autostart,			'$EDITOR ~/.config/openbox/autostart',	shellscript
+Edit rc.xml,			'$EDITOR ~/.config/openbox/rc.xml',		text-xml
 ^sep()
 #os_locale_language#

@@ -4,23 +4,15 @@
 
 #?os_locale_language!=ru#
 gxmessage "You really wish to switch off the computer?" -ontop -center -title "Exit" -default "Cancel" -buttons "_Cancel":1,"_Exit":2,"_Lock":5,"_Reboot":3,"_Shutdown":4 >/dev/null
-
-case $? in
-    1) echo "Exit";;
-    2) openbox --exit;;
-    3) sudo reboot;;
-    4) sudo halt;;
-    5) xlock;;
-esac
 #os_locale_language#
 #?os_locale_language==ru#
 gxmessage "Вы уверены, что хотите выключить компьютер?" -ontop -center -title "Выход" -default "Отмена" -buttons "_Отмена":1,"_Выход":2,"_Блокировать":5,"_Перезагрузка":3,"_Выключение":4 >/dev/null
+#os_locale_language#
 
 case $? in
     1) echo "Exit";;
     2) openbox --exit;;
-    3) sudo reboot;;
-    4) sudo halt;;
+    3) loginctl reboot;;
+    4) loginctl shutdown;;
     5) xlock;;
 esac
-#os_locale_language#
