@@ -1,0 +1,12 @@
+# Calculate append=skip
+#?os_locale_language==ru#
+Браузер,			firefox,	firefox
+Менеджер файлов,	spacefm,	system-file-manager
+Эмулятор терминала,	urxvt,		utilities-terminal
+#os_locale_language#
+#?os_locale_language==ru#
+Browser,      firefox,	firefox
+File manager, spacefm,	system-file-manager
+Terminal,     urxvt,	utilities-terminal
+#os_locale_language#
+^sep()
