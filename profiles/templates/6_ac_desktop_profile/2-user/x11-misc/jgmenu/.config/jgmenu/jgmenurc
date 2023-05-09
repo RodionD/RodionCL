@@ -1,0 +1,15 @@
+# Calculate append=skip
+tint2_look          = 0
+at_pointer          = 1
+
+icon_theme = Adwaita
+icon_theme_fallback = xdg
+color_menu_bg       = #19152d 100
+color_menu_border   = #4964bc 100
+color_norm_fg       = #ffffff 100
+
+color_sel_bg        = #1672c9 100
+color_sel_fg        = #3b4252 100
+color_sel_border    = #ffffff 100
+csv_name_format     = %n\n<span size="x-small">%g</span>
+csv_no_dirs         = 0

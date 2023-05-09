@@ -1,5 +1,4 @@
-#Calculate format=raw path=~/
-
+#Calculate format=raw path=~/ append=skip
 gtk-theme-name=Adwaita-dark
 gtk-icon-theme-name=Adwaita
 gtk-modules=colorreload-gtk-module

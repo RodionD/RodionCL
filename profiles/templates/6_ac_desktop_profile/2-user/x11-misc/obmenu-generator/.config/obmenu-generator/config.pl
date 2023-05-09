@@ -1,4 +1,4 @@
-# Calculate
+# Calculate  append=skip
 #!/usr/bin/perl
 
 # obmenu-generator - configuration file
