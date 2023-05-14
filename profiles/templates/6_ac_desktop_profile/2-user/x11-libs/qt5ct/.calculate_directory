@@ -1,1 +1,1 @@
-# Calculate append=skip mergepkg(qt5ct)!=&&ini(update.qt5ct)!=off&&ini(ver.qt5ct)==&&pkg(x11-libs/qt5ct)>=1.7
+# Calculate mergepkg(qt5ct)!=&&ini(update.qt5ct)!=off&&ini(ver.qt5ct)==&&pkg(x11-libs/qt5ct)>=1.7&&exists(~/.config/qt5ct)== append=skip

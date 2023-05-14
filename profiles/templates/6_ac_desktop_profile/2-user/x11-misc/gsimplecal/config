@@ -1,5 +1,4 @@
-# Calculate path=~/.config/gsimplecal append=skip
-
+# Calculate path=~/.config/gsimplecal
 show_calendar = 1
 show_timezones = 1
 mark_today = 1

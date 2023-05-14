@@ -1,4 +1,4 @@
-#Calculate format=raw path=~/ append=skip
+#Calculate format=raw path=~/
 #
 # Openbox shutdown dialog
 # This is example obshutdown rc file
