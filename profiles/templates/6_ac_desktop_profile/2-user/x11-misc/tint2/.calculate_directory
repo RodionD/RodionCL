@@ -1,1 +1,1 @@
-# Calculate mergepkg()>=17.0&&ini(update.tint2)!=off&&ini(cldo.tint2)==&&exists(~/.config/tint2/tint2rc)== append=skip
+# Calculate mergepkg()>=17.0&&ini(update.tint2)!=off&&ini(cldo.tint2)==&&exists(~/.config/tint2/tint2rc)==&&exists(~/.config/tint2/tint2rc.launcher)== append=skip

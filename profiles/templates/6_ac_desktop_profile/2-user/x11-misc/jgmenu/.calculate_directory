@@ -1,1 +1,1 @@
-# Calculate mergepkg(jgmenu)!=&&ini(update.jgmenu)!=off&&ini(ver.jgmenu)==&&pkg(x11-misc/jgmenu)>=4.4.1&&exists(~/.config/jgmenu)== append=skip
+# Calculate mergepkg(jgmenu)!=&&ini(update.jgmenu)!=off&&ini(ver.jgmenu)==&&pkg(x11-misc/jgmenu)>=4.4.1&&exists(~/.config/jgmenu/jgmenurc)&&exists(~/.config/jgmenu/append.csv)&&exists(~/.config/jgmenu/prepend.csv)== append=skip
