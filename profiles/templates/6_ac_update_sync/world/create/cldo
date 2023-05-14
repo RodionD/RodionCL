@@ -65,7 +65,7 @@ media-gfx/gphotofs
 sys-fs/fuse-exfat
 media-gfx/shotwell
 sys-fs/exfatprogs
-net-irc/hexchat
 sys-fs/udiskie
 x11-misc/gmrun
+x11-misc/jgmenu
 #in#
