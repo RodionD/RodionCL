@@ -1,4 +1,4 @@
-#Calculate format=raw path=~/ append=skip
+#Calculate format=raw append=skip
 URxvt*foreground: #D0D0D0
 URxvt*background: #000000
 URxvt*font: xft:Droid Sans Mono
