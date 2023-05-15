@@ -1,4 +1,4 @@
-# Calculate chmod=0755
+# Calculate chmod=0755 path=~/.config/openbox
 #!/bin/bash
 
 feh --bg-scale "/usr/share/wallpapers/Calculate_Linux/contents/images/#-os_x11_standart-#.jpg" &

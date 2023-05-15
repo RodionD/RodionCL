@@ -1,1 +1,1 @@
-# Calculate append=skip mergepkg(volumeicon)!=&&ini(update.volumeicon)!=off&&ini(ver.volumeicon)==&&pkg(media-sound/volumeicon)>=0.5.1
+# Calculate mergepkg()>=0.5.1&&ini(update.volumeicon)!=off&&ini(ver.volumeicon)==&&exists(~/.config/columeicon/volumeicon)==  append=skip

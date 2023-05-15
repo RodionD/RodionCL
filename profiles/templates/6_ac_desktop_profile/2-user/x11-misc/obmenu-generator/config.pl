@@ -1,4 +1,5 @@
-# Calculate chmod=0755
+# Calculate chmod=0755 path=~/.config/obmenu-generator
+
 #!/usr/bin/perl
 
 # obmenu-generator - configuration file
