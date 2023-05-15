@@ -1,4 +1,4 @@
-# Calculate path=~/.config/jgmenu
+# Calculate
 ^sep()
 #?os_locale_language==ru#
 Выключение,		gxshutdown, system-shutdown

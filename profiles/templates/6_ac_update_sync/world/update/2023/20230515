@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-RodionCL.world)<#-cut()-#
+
+#-ini(overlay-RodionCL.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLDO)!=#
+dev-perl/Gtk3
+#in#

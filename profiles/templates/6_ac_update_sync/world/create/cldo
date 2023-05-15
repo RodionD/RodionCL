@@ -7,6 +7,7 @@ app-text/evince
 sci-calculators/galculator
 app-editors/leafpad
 media-gfx/feh
+dev-perl/Gtk3
 x11-misc/obmenu-generator
 x11-misc/obconf
 x11-misc/tint2

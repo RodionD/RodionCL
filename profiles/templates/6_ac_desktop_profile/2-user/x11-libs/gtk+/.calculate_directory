@@ -1,1 +1,1 @@
-# Calculate mergepkg(gtk+)!=&&ini(update.gtk+)!=off&&ini(ver.gtk+)==&&pkg(x11-libs/gtk+)>=2.24&&exists(~/.config/gtk-3.0)== append=skip
+# Calculate mergepkg(gtk+)!=&&ini(update.gtk+)!=off&&ini(ver.gtk+)==&&pkg(x11-libs/gtk+)>=2.24&&exists(~/.config/gtk-3.0/settings.ini)== append=skip
