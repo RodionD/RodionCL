@@ -1,1 +1,1 @@
-# Calculate mergepkg()>=1.11&&ini(update.xxkb)!=off&&ini(ver.xxkb)&&exists(~/.xxkbrc)== append=skip
+# Calculate append=skip mergepkg()>=1.11&&ini(update.xxkb)!=off&&ini(ver.xxkb)==
