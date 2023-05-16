@@ -7,7 +7,7 @@
 Менеджер файлов,	spacefm,	system-file-manager
 Эмулятор терминала,	urxvt,		utilities-terminal
 #os_locale_language#
-#?os_locale_language==ru#
+#?in(os_locale_language,ru)==#
 @rect,,40,10,150,20,2,left,top,#666666 15,#000000 0,content
 @search,,40,10,150,20,2,left,top,auto,#000000 0,Type to search
 Browser,      firefox,	firefox
