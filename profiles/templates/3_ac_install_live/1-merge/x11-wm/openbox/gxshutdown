@@ -11,6 +11,6 @@ case $? in
     1) echo "Exit";;
     2) openbox --exit;;
     3) loginctl reboot;;
-    4) loginctl shutdown;;
+    4) loginctl poweroff;;
     5) xlock;;
 esac
