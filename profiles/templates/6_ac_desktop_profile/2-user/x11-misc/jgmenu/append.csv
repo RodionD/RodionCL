@@ -10,7 +10,7 @@
 Редактирование rc.xml,		'$EDITOR ~/.config/openbox/rc.xml',		text-xml
 ^sep()
 #os_locale_language#
-#?in(os_locale_language,ru)==#
+#?os_locale_language!=ru#
 PowerOff,		gxshutdown, system-shutdown
 ^sep()
 ^tag(openbox)
