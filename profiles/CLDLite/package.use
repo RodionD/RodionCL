@@ -3,3 +3,4 @@ dev-qt/qtsql -postgres sqlite
 kde-apps/dolphin -semantic-desktop
 kde-apps/gwenview -semantic-desktop
 kde-plasma/plasma-desktop -semantic-desktop
+app-office/libreoffice-bin java python_single_target_python3_11 kde
