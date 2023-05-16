@@ -1,4 +1,4 @@
-#Calculate format=raw
+# Calculate format=raw
 
 URxvt*foreground: #D0D0D0
 URxvt*background: #000000
