@@ -1,1 +1,1 @@
-# Calculate mergepkg()>=0.5.1&&ini(update.volumeicon)!=off&&ini(ver.volumeicon)==&&exists(~/.config/columeicon/volumeicon)==  append=skip
+# Calculate append=skip mergepkg()>=0.5&&ini(update.volumeicon)!=off&&ini(ver.volumeicon)<0.5

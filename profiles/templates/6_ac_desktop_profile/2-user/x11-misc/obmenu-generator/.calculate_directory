@@ -1,1 +1,1 @@
-# Calculate mergepkg()>=0.91&&ini(update.obmenu-generator)!=off&&ini(ver.obmenu-generator)==&&exists(~/.config/obmenu-generator/config.pl)== append=skip
+# Calculate append=skip mergepkg()>=0.91&&ini(update.obmenu-generator)!=off&&ini(ver.obmenu-generator)==

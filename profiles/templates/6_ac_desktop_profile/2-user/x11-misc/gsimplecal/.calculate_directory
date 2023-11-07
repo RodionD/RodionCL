@@ -1,1 +1,1 @@
-# Calculate mergepkg()>=2.2&&ini(update.gsimplecal)!=off&&ini(ver.gsimplecal)==&&exists(~/.config/gsimplecal/config)== append=skip
+# Calculate append=skip mergepkg()>=2.2&&ini(update.gsimplecal)!=off&&ini(ver.gsimplecal)==

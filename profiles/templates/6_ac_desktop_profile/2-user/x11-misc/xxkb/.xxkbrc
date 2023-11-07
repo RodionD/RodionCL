@@ -1,4 +1,4 @@
-# Calculate format=raw os_locale_language!=en
+# Calculate format=raw os_locale_language!=en path=~/
 XXkb.controls.two_state: no
 XXkb.controls.add_when_start: yes
 XXkb.controls.add_when_create: yes
