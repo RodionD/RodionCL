@@ -1,1 +1,1 @@
-# Calculate pkg(x11-misc/qt5ct)>=1.7==&&ini(update.qt5ct)!=off&&ini(ver.qt5ct)==&&exists(~/.config/qt5ct/qt5ct.conf)== append=skip
+# Calculate pkg(x11-misc/qt5ct)>=1.7&&ini(update.qt5ct)!=off&&ini(ver.qt5ct)==&&exists(~/.config/qt5ct/qt5ct.conf)== append=skip
