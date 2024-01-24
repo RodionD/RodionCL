@@ -18,7 +18,7 @@ IUSE=""
 RDEPEND="x11-libs/gtk+:2"
 DEPEND="${RDEPEND}
 	dev-python/pkgconfig
-	>=sys-devel/autoconf-2.65"
+	>=dev-build/autoconf-2.65"
 
 S=$WORKDIR/$PF
 
