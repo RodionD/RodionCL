@@ -2,7 +2,7 @@ sys-apps/calculate-utils client qt5
 x11-misc/obdevicemenu notifications
 x11-misc/ktsuss sudo
 media-gfx/flameshot -wayland
-app-office/libreoffice-bin java base
+app-office/libreoffice-bin java
 dev-libs/libgdata -gnome-online-accounts
 x11-misc/tint2 battery startup-notification tint2conf
 media-video/ffmpeg -openal -sdl
