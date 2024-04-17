@@ -3,7 +3,7 @@
 ##
 # Set variables
 ##
-CALC_URL='https://mirror.yandex.ru/calculate/nightly/'
+CALC_URL='https://mirror.yandex.ru/calculate/release/'
 GIT_URL='https://github.com/RodionD/RodionCL'
 IF_BREAK=0
 
